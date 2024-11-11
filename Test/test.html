@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pit Stop Strategy Optimizing</title>
+    <script src="test.js" defer></script>
+</head>
+<body>
+    <h1>Pit Stop Strategy Optimizing</h1>
+    <label for="tire_health">Tire Health (0-1):</label>
+    <input type="number" id="tire_health" step="0.01" min="0" max="1" required>
+    <br>
+    <label for="race_position">Race Position (1-20):</label>
+    <input type="number" id="race_position" min="1" max="20" required>
+    <br>
+    <label for="track_length">Track Length (3000-7000 meters):</label>
+    <input type="number" id="track_length" min="3000" max="7000" required>
+    <br>
+    <label for="current_lap">Current Lap:</label>
+    <input type="number" id="current_lap" required>
+    <br>
+    <button onclick="getPitStopDecision()">Get Pit Stop Decision</button>
+    <p id="result"></p>
+</body>
+</html>
